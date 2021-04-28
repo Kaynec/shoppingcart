@@ -41234,8 +41234,9 @@ var App = function App() {
     to: "/cart"
   }, "CART ", itemCount), /*#__PURE__*/_react.default.createElement("p", null, " Polka Dots")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
-    path: "/"
-  }, /*#__PURE__*/_react.default.createElement(_Home.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/",
+    component: _Home.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/shop"
   }, /*#__PURE__*/_react.default.createElement(_Shop.default, {
@@ -41308,7 +41309,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44263" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38983" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
