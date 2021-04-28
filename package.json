@@ -1,0 +1,27 @@
+{
+  "name": "shoppingpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css.gg": "^2.0.0",
+    "infinite-react-carousel": "^1.2.11",
+    "parcel-bundler": "^1.12.5",
+    "react": "^17.0.2",
+    "react-alice-carousel": "^2.5.1",
+    "react-dom": "^17.0.2",
+    "react-image-slider": "^0.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-simple-image-slider": "^2.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.32.11"
+  }
+}

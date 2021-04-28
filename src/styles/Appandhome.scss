@@ -1,0 +1,135 @@
+$text-color: hsl(42, 10, 20);
+$text-weigth: 800;
+$font-size-link: 1.2rem;
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#root {
+  width: 100%;
+  height: 100%;
+  background: hsl(51, 54, 95);
+}
+.home {
+  width: 100%;
+  height: 100vh;
+}
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  a {
+    margin: 1.75rem;
+    color: $text-color;
+    text-decoration: none;
+    transition: border 0.25s ease-out;
+    font-weight: $text-weigth;
+    font-size: $font-size-link;
+    order: 2;
+
+    &:hover {
+      border-bottom: 3px solid rgb(189, 171, 97);
+    }
+  }
+
+  p {
+    background: rgb(252, 242, 227);
+    transform: skewY(-9deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    transition: all 0.5s;
+    font-size: 1.4rem;
+    font-family: "Courier New", Courier, monospace;
+    &:hover {
+      background: transparent;
+      transform: scale(1.1);
+    }
+  }
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    a {
+      margin: 0.5rem;
+      color: black;
+      text-decoration: none;
+      font-weight: $text-weigth;
+      font-size: $font-size-link;
+      transition: border 0.25s ease-out;
+
+      &:hover {
+        border-bottom: 3px solid rgb(189, 171, 97);
+      }
+    }
+  }
+
+  .github {
+    margin-inline: 0.5rem;
+    padding: 1rem;
+
+    a {
+      color: $text-color;
+      font-size: 2.5rem;
+      font-weight: $text-weigth;
+    }
+  }
+}
+
+.homepage-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.img-holder {
+  width: 30vw;
+  margin: 0 auto;
+
+  > div img {
+    // border: 5px solid wheat;
+    outline: 5px solid wheat;
+    margin-top: 0.4rem;
+  }
+
+  .sliderimg {
+    height: 70vh;
+  }
+}
+.homepage-container {
+  display: flex;
+}
+@media screen and (max-width: 525px) {
+  .img-holder {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .img-holder {
+    width: 80%;
+  }
+}
