@@ -74,9 +74,8 @@ const App = () => {
           <p> Polka Dots</p>
         </nav>
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route exact path="/" component={Home} />
+
           <Route exact path="/shop">
             <Shop items={items} setItems={setItems} />
           </Route>
