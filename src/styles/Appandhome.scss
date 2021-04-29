@@ -111,7 +111,6 @@ body {
   margin: 0 auto;
 
   > div img {
-    // border: 5px solid wheat;
     outline: 5px solid wheat;
     margin-top: 0.4rem;
   }
@@ -130,6 +129,6 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .img-holder {
-    width: 80%;
+    width: 50%;
   }
 }

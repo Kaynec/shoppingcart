@@ -526,7 +526,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .img-holder {
-    width: 80%;
+    width: 50%;
   }
 }
 
