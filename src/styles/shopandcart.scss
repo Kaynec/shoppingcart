@@ -31,13 +31,22 @@
     }
   }
   img {
-    width: 100%;
-    height: 50vh;
+    width: 70%;
+    height: 40vh;
     border: 5px solid wheat;
   }
   p {
     color: black;
     font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 525px) {
+  .cart {
+    width: 90%;
+  }
+  .container {
+    width: 90%;
+    padding: 1rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -57,9 +66,10 @@
 
 .cart {
   padding-bottom: 6rem;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
   min-height: 100vh;
-  background: hsl(51, 54, 95);
+  // background: hsl(51, 54, 95);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -79,11 +89,11 @@
       width: 100%;
       padding: 1rem 0rem;
       background: transparent;
-      border: 2px solid wheat;
+      // border: 2px solid wheat;
       font-size: 22px;
     }
     .cart-item {
-      background: rgba(216, 191, 132, 0.487);
+      background: rgba(199, 179, 133, 0.487);
       margin: 0.5rem;
       display: flex;
       flex-direction: column;
@@ -121,7 +131,8 @@
   display: flex;
   flex-direction: column;
   min-height: 30vh;
-  background: rgb(92, 134, 146);
+  background: rgba(98, 173, 194, 0.44);
+  border-radius: 2%;
   padding: 2rem;
   width: 80%;
   margin: 0 auto;
@@ -157,7 +168,7 @@
     width: 20vw;
     margin: 1rem;
     height: 21vh;
-    border: 3px solid wheat;
+    border: 3px solid rgba(245, 222, 179, 0.583);
   }
   > div {
     width: 70%;
