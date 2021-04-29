@@ -68,35 +68,32 @@ const App = () => {
   }, [items]);
   return (
     <>
-      <Router>
-        <nav className="nav-bar">
-          <Link to="/cart">CART {itemCount}</Link>
-          <p> Polka Dots</p>
-        </nav>
-        <Switch>
-          <Route exact path="/" component={Home} />
+      <nav className="nav-bar">
+        <Link to="/cart">CART {itemCount}</Link>
+        <p> Polka Dots</p>
+      </nav>
+      <Switch>
+        <Route exact path="/shop">
+          <Shop items={items} setItems={setItems} />
+        </Route>
+        <Route exact path="/cart">
+          <Cart items={items} setItems={setItems} itemCount={itemCount} />
+        </Route>
+        <Route exact path="/" component={Home} />
+      </Switch>
 
-          <Route exact path="/shop">
-            <Shop items={items} setItems={setItems} />
-          </Route>
-          <Route exact path="/cart">
-            <Cart items={items} setItems={setItems} itemCount={itemCount} />
-          </Route>
-        </Switch>
+      <footer className="footer">
+        <div className="links">
+          <Link to="/">Home</Link>
+          <Link to="/shop">Shop</Link>
+        </div>
 
-        <footer className="footer">
-          <div className="links">
-            <Link to="/">Home</Link>
-            <Link to="/shop">Shop</Link>
-          </div>
-
-          <div className="github">
-            <a href="https://github.com/Kaynec" target="_blank">
-              <i className="lab la-github"></i>
-            </a>
-          </div>
-        </footer>
-      </Router>
+        <div className="github">
+          <a href="https://github.com/Kaynec" target="_blank">
+            <i className="lab la-github"></i>
+          </a>
+        </div>
+      </footer>
     </>
   );
 };
