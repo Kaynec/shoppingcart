@@ -41228,15 +41228,11 @@ var App = function App() {
       return numberOfAll;
     });
   }, [items]);
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement("nav", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("nav", {
     className: "nav-bar"
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/cart"
   }, "CART ", itemCount), /*#__PURE__*/_react.default.createElement("p", null, " Polka Dots")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    exact: true,
-    path: "/",
-    component: _Home.default
-  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/shop"
   }, /*#__PURE__*/_react.default.createElement(_Shop.default, {
@@ -41249,7 +41245,11 @@ var App = function App() {
     items: items,
     setItems: setItems,
     itemCount: itemCount
-  }))), /*#__PURE__*/_react.default.createElement("footer", {
+  })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/",
+    component: _Home.default
+  })), /*#__PURE__*/_react.default.createElement("footer", {
     className: "footer"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "links"
@@ -41264,7 +41264,7 @@ var App = function App() {
     target: "_blank"
   }, /*#__PURE__*/_react.default.createElement("i", {
     className: "lab la-github"
-  }))))));
+  })))));
 };
 
 var _default = App;
@@ -41278,10 +41278,12 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _App = _interopRequireDefault(require("./App"));
 
+var _reactRouterDom = require("react-router-dom");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement(_App.default, null)), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App":"App.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_App.default, null))), document.getElementById("root"));
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App":"App.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -41309,7 +41311,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38983" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46713" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
