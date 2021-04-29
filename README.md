@@ -1,6 +1,6 @@
  shoppingcartAPP
 LIVE => https://kaynec.github.io/shoppingcart/#/
-code => https://github.com/Kaynec/shoppingcart
+
 Built for www.odinproject.com online course
 
 What i used => Scss React Parcel
