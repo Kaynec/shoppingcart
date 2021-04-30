@@ -252,16 +252,6 @@
   font-size: 1.7rem;
 }
 
-@media screen and (max-width: 525px) {
-  .cart {
-    width: 90%;
-  }
-
-  .container {
-    width: 90%;
-    padding: 1rem;
-  }
-}
 @media screen and (min-width: 900px) {
   .item {
     display: flex;
@@ -344,11 +334,11 @@
   color: black;
 }
 .container p {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .container span {
   padding: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   border-bottom: wheat solid 2px;
 }
 
@@ -394,12 +384,22 @@
 }
 
 @media (min-width: 900px) {
-  .container span,
-.container p {
-    font-size: 1.3rem;
-  }
   .container .item.container {
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 525px) {
+  .container {
+    width: 90%;
+  }
+
+  .cart {
+    width: 90%;
+  }
+
+  .item-container img {
+    height: 15vh;
+    margin-right: 5rem;
   }
 }
 html {
@@ -504,7 +504,7 @@ body {
 }
 
 .img-holder {
-  max-width: 33vw;
+  max-width: 40vw;
   margin: 0 auto;
 }
 .img-holder > div img {
@@ -512,7 +512,7 @@ body {
   margin-top: 0.4rem;
 }
 .img-holder .sliderimg {
-  height: 70vh;
+  height: auto;
 }
 
 .homepage-container {
@@ -521,12 +521,7 @@ body {
 
 @media screen and (max-width: 525px) {
   .img-holder {
-    width: 95%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .img-holder {
-    max-width: 75vw;
+    width: 90%;
   }
 }
 
