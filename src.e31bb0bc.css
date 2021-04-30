@@ -504,7 +504,7 @@ body {
 }
 
 .img-holder {
-  width: 30vw;
+  max-width: 33vw;
   margin: 0 auto;
 }
 .img-holder > div img {
@@ -526,7 +526,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .img-holder {
-    width: 50%;
+    max-width: 75vw;
   }
 }
 
